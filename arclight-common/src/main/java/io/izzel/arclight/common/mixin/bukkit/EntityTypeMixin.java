@@ -76,13 +76,13 @@ public class EntityTypeMixin implements EntityTypeBridge {
     }
 
     @Override
-    public static EntityType fromName(@Nullable String name) {
+    public static EntityType fromName(String name) {
         if (name == null) {
             return null;
         }
         return name;
     }
-    
+
     @Override
     public void bridge$setHandle(net.minecraft.world.entity.EntityType<?> entityType) {
         this.handleType = entityType;
