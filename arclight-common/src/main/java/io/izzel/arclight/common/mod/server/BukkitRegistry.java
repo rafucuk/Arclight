@@ -349,7 +349,7 @@ public class BukkitRegistry {
                 entityType = EnumHelper.makeEnum(EntityType.class, name, i++, ENTITY_CTOR, ImmutableList.of(location.getPath(), Entity.class, -1));
                 ((EntityTypeBridge) (Object) entityType).bridge$setup(location, type, entitySpec(location));
                 newTypes.add(entityType);
-                ArclightMod.LOGGER.debug("Registered {} as entity {}", location, entityType);
+                ArclightMod.LOGGER.debug("Registered {} as entity {}, test value {}", location, entityType, location.getPath());
             }
             ENTITY_NAME_MAP.put(location.toString(), entityType);
         }
