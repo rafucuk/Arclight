@@ -80,7 +80,7 @@ public class EntityTypeMixin implements EntityTypeBridge {
         if (name == null) {
             return null;
         }
-        return name;
+        return EntityType.valueOf(name);
     }
 
     @Override
