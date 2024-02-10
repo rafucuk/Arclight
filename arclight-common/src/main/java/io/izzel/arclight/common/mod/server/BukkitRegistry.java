@@ -355,7 +355,7 @@ public class BukkitRegistry {
         }
         EnumHelper.addEnums(EntityType.class, newTypes);
 
-        ArclightMod.LOGGER.info("testrauf kitsune", EntityType.fromName("REINAPACK_KITSUNE"));
+        ArclightMod.LOGGER.info("testrauf kitsune", EntityType.fromName("REINAPACK_KITSUNE").getName());
         ArclightMod.LOGGER.info("registry.entity-type", newTypes.size());
     }
 
